@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form with Input Types</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: auto;
+      }
+      label {
+        margin-top: 10px;
+      }
+      input {
+        padding: 5px;
+        margin-top: 5px;
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        height: 40px;
+        border-radius: 10px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form with Different Input Tags</h1>
+    <form>
+      <label for="date">Select Date:</label>
+      <input type="date" id="date" name="date" />
+
+      <label for="color">Choose a Color:</label>
+      <input type="color" id="color" name="color" />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@example.com"
+      />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="10" />
+
+      <label for="range">Select a Range:</label>
+      <input type="range" id="range" name="range" min="0" max="100" />
+
+      <label for="url">Website URL:</label>
+      <input type="url" id="url" name="url" placeholder="https://example.com" />
+
+      <label for="file">Upload a File:</label>
+      <input type="file" id="file" name="file" />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

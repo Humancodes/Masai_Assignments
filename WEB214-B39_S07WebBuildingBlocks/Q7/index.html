@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Images with Picture Element</title>
+    <style>
+      body {
+        text-align: center;
+        padding: 50px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive Image Example Using picture Element</h1>
+    <picture>
+      <source srcset="img-small.jpg" media="(max-width: 600px)" />
+
+      <source srcset="img-med.jpg" media="(max-width: 1200px)" />
+
+      <source srcset="img-large.jpg" media="(min-width: 1201px)" />
+
+      <img src="img-large.jpg" alt="image-def" />
+    </picture>
+  </body>
+</html>

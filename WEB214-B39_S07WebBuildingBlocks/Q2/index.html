@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <style>
+      .area-one {
+        margin-bottom: 15px;
+      }
+
+      .area-one input[type="radio"] {
+        margin-right: 7px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="area-one">
+      <p>
+        Feedback Type:
+        <select id="feedback-type" name="feedback-type">
+          <option value="general">General</option>
+          <option value="bug">Bug Report</option>
+          <option value="feature">Feature Request</option>
+        </select>
+      </p>
+    </div>
+
+    <div class="area-one">
+      <p>Your Message:</p>
+      <textarea id="message" name="message" rows="5" cols="50"></textarea>
+    </div>
+
+    <div class="area-one">
+      <p>Rate our website:</p>
+      <div>
+        <input type="radio" id="rate1" name="rating" value="1" />
+        <span>1</span>
+      </div>
+      <div>
+        <input type="radio" id="rate2" name="rating" value="2" />
+        <span>2</span>
+      </div>
+      <div>
+        <input type="radio" id="rate3" name="rating" value="3" />
+        <span>3</span>
+      </div>
+      <div>
+        <input type="radio" id="rate4" name="rating" value="4" />
+        <span>4</span>
+      </div>
+      <div>
+        <input type="radio" id="rate5" name="rating" value="5" />
+        <span>5</span>
+      </div>
+    </div>
+
+    <div class="area-one">
+      <p>
+        Your Age: <input type="number" id="age" name="age" min="10" max="100" />
+      </p>
+    </div>
+
+    <div class="area-one">
+      <p>
+        Your Email (required):
+        <input type="email" id="email" name="email" required />
+      </p>
+    </div>
+
+    <div class="area-one">
+      <p>
+        Password (min 8 characters):
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="8"
+          required
+        />
+      </p>
+    </div>
+
+    <div class="area-one">
+      <p>
+        Your Website (optional):
+        <input type="url" id="website" name="website" />
+      </p>
+    </div>
+
+    <div class="area-one">
+      <input type="checkbox" id="terms" name="terms" required />
+      <span>I agree to the terms and conditions</span>
+    </div>
+
+    <button type="submit">Submit</button>
+  </body>
+</html>
