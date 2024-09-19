@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-weight: 800;
+        background: radial-gradient(#9198e5, #e01d1d);
+      }
+      .container {
+        padding: 5px;
+        flex-direction: column;
+        display: flex;
+        background-color: rgb(244, 244, 244);
+        width: 400px;
+        margin: auto;
+        border: none;
+        border-radius: 10px;
+        height: 600px;
+      }
+      .box input[type="radio"] {
+        margin-right: 7px;
+      }
+      #dob {
+        background-color: #fff;
+        width: 95%;
+        height: 25px;
+        border: none;
+      }
+      #message {
+        border: none;
+        width: 95%;
+      }
+      #email {
+        background-color: #fff;
+        border: none;
+        width: 95%;
+        height: 25px;
+      }
+      #password {
+        background-color: #fff;
+        border: none;
+        width: 95%;
+        height: 25px;
+      }
+      #website {
+        background-color: #fff;
+        border: none;
+        width: 95%;
+        height: 25px;
+      }
+      #submit {
+        margin-bottom: 8px;
+        background-color: rgb(71, 179, 80);
+        color: rgb(187, 240, 188);
+        border: none;
+        width: 80px;
+        border-radius: 4px;
+        height: 35px;
+      }
+      .btn {
+        justify-content: center;
+        display: flex;
+      }
+      .rat {
+        display: flex;
+        justify-content: space-around;
+        background-color: #fff;
+      }
+
+      .box {
+        margin: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center; color: white; margin: 20px 0">
+      Feedback Form
+    </h1>
+    <div class="container">
+      <div class="box">
+        <p>Feedback Type:</p>
+        <select id="feedback-type" name="feedback-type">
+          <option value="compliment">Compliment</option>
+          <option value="bug">Bug Report</option>
+          <option value="feature">Feature Request</option>
+        </select>
+      </div>
+
+      <div class="box">
+        <p>Your Message:</p>
+        <textarea id="message" name="message" rows="5" cols="50"></textarea>
+      </div>
+
+      <div class="box">
+        <p>Website Rating:</p>
+        <div class="rat">
+          <div class="">
+            <input type="radio" id="rate1" name="rating" value="1" />
+            <span>Excellent</span>
+          </div>
+          <div class="">
+            <input type="radio" id="rate2" name="rating" value="2" />
+            <span>Good</span>
+          </div>
+          <div class="">
+            <input type="radio" id="rate3" name="rating" value="3" />
+            <span>Average</span>
+          </div>
+          <div class="">
+            <input type="radio" id="rate4" name="rating" value="4" />
+            <span>Poor</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <p>(Age)10-100:</p>
+        <input type="type" id="dob" name="dob" />
+      </div>
+
+      <div class="box">
+        <p>Email*:</p>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="box">
+        <p>Password (min 8 characters):</p>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="8"
+          required
+        />
+      </div>
+
+      <div class="box">
+        <p>Your Website (optional):</p>
+        <input type="url" id="website" name="website" />
+      </div>
+
+      <div class="box">
+        <input type="checkbox" id="terms" name="terms" required />
+        <span>I agree to the terms and conditions</span>
+      </div>
+      <div class="btn">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  border: 3px solid black;
+  width: 25%;
+  height: 550px;
+  margin: auto;
+  margin-top: 30px;
+}
+.image {
+  border-radius: 70%;
+  width: 100%;
+  overflow: hidden;
+  margin: 10px;
+}
+.image-box {
+  width: 300px;
+}
+.card {
+  height: 400px;
+  width: 85%;
+  border: none;
+  margin: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.intro {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.john {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 10px;
+  color: rgb(180, 188, 103);
+  font-family: "Pixelify Sans", sans-serif;
+}
+.comp {
+  font-weight: 500;
+  color: rgb(121, 125, 126);
+}
+.year {
+  font-weight: 600;
+  margin: 20px;
+}
+.st1 {
+  width: 20px;
+}
+.title {
+  margin: 10px;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "san serif", "arial";
+}
+.pan {
+  margin: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Pixelify Sans", sans-serif;
+}
+.star {
+  color: black;
+  font-size: 1.1em;
+}
