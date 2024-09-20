@@ -1,0 +1,106 @@
+@import url("https://fonts.cdnfonts.com/css/nexa-bold");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.navbar {
+  background-color: white;
+  display: flex;
+  /* position: fixed; */
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 5px 8px rgba(135, 135, 135, 0.2);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  font-family: Nexa, sans-serif;
+}
+/* .logo {
+  } */
+.nav-items {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+}
+.item > a {
+  color: black;
+}
+.item {
+  padding: 0 25px;
+}
+.icons {
+  margin: 0 5px;
+}
+.nav-btn {
+  background-color: #b1e50e;
+  border: none;
+  border-radius: 6px;
+  padding: 16px 22px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* background design */
+
+.box-container {
+  display: grid;
+  border-radius: 25px;
+  overflow: hidden;
+  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  background: linear-gradient(
+    180deg,
+    rgba(225, 233, 254, 0.8),
+    rgba(225, 233, 254, 0)
+  );
+}
+
+.box {
+  border: none;
+  height: 75px;
+  width: 75px;
+  border: 1px solid rgb(219, 223, 234);
+  transition: background-color 1s ease-in-out, color 2s ease-in-out;
+}
+
+.box:hover {
+  background-color: #d8d8d8d7;
+  cursor: pointer;
+  transition: background-color 0.09s ease-in, color 0.1s ease-in;
+}
+
+.hero-text {
+  position: absolute;
+  top: 22%;
+  left: 11%;
+  pointer-events: none;
+}
+
+.hero-head1 {
+  font-size: 85px;
+  font-weight: 700;
+  margin-top: 60px;
+  font-family: sans-serif;
+}
+.hero-head2 {
+  font-size: 85px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #6b92fb;
+  font-family: sans-serif;
+}
+
+.hero-para {
+  margin-top: 8%;
+  font-weight: 700;
+  font-size: 32px;
+  width: 960px;
+  line-height: 44px;
+  color: #494b57;
+  font-family: sans-serif;
+}
