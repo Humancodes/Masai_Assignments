@@ -1,0 +1,89 @@
+@import url('https://fonts.cdnfonts.com/css/switzer');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Switzer', sans-serif;
+    color:white;
+  }
+  
+  a {
+    color: inherit;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fedfe5;
+    height: 70px;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .header button {
+    margin-left: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    height: 70px;
+    background: linear-gradient(
+    to right,
+    rgb(25, 83, 190),
+    rgb(5, 6, 11));
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Inter", sans-serif;
+    padding: 0 15px;
+    padding:25px;
+  }
+  
+  .app-btn {
+    color: white;
+    background-color: #ed0331;
+    font-weight: 500;
+    padding: 15px 20px;
+    border: none;
+    font-family: "Inter", sans-serif;
+    border-radius: 10px;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  .new{
+    background-color:#ffe59c;
+    padding: 1px 6px;
+    border-radius: 25px;
+    font-size:9px;
+    color:black !important;
+    margin-left: 2px;
+    text-align: center;
+    position:relative;
+    bottom: 5px;
+    border: transparent;
+  }
+  .nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    gap:25px;
+    font-size:14px;
+  }
+  .item {
+    margin: 0 20px;
+  }
+  .sign{
+    padding: 10px 18px;
+    border-radius: 5px;
+    background-color: #0165ff;
+    border: transparent;
+    font-weight: 400;
+  }
