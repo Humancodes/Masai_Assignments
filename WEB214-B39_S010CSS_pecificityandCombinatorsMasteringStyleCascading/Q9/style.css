@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(10, 11, 15);
+body{
+    margin-left: 100px;
+    margin-top: 15px;
+    margin-right: 100px;
+}
+}
+header{
+    display: flex;
+    color:rgb(99, 45, 219);
+    font-size: 23px;
+    font-weight: 800;
+    margin-bottom: 28px;
+}
+.big-text{
+    color:rgb(237, 237, 237);
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+.small-text{
+    color:rgb(145, 141, 138);
+    font-size: 20px;
+    margin-bottom: 28px;
+}
+.l-big-box{
+    border-radius: 2%;
+    border: 1px solid rgba(237, 237, 237, 0.218);
+    width:61%;
+    height:500px;
+    padding:35px;
+}
+.p1{
+    color:rgb(237, 237, 237);
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.p2{
+    color:rgb(145, 141, 138);
+    font-size: 15px;
+    margin-bottom:15px;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+}
+.bill-m{
+    font-size: 14px;
+    color:rgb(113, 115, 123);
+    font-weight: 100;
+}
+.bill-y{
+    font-size: 14px;
+    color:rgb(187, 181, 177);
+    font-weight: 100;
+}
+.p1-kid{
+    display: flex;
+    align-items: center;
+}
+.options{
+    display: grid;
+    color:rgb(145, 141, 138);
+    font-weight: 100;
+    font-size:15px;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+    margin-top:35px;
+}
+.check-i{
+    margin-right:10px;
+}
+.button-container1 {
+    margin-top: 20px;
+    text-align: center;   
+}
+.but1 {
+    display: inline-block;
+    padding: 10px;
+    width:100%;
+    color: rgb(237, 237, 237);
+    background-color: rgb(110, 37, 228);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-size:14px;
+    font-weight: 100;
+}
+.arrow{
+    color:rgb(237, 237, 237);
+    background-color: rgb(110, 37, 228);
+    margin-left: 5px;
+}
+.r-big-box{
+    border-radius: 2%;
+    border: 1px solid rgba(237, 237, 237, 0.218);
+    width:39%;
+    height:440px;
+    padding:25px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mul-p{
+    margin:20px 0;  
+    margin-bottom: px;
+}
+.button-container2 {
+    margin-top: 70px;
+    text-align: center;   
+}
+.but2 {
+    display: inline-block;
+    padding: 10px;
+    width:90%;
+    color: rgb(237, 237, 237);
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    font-size:14px;
+    font-weight: 100;
+    border: 1px solid rgba(237, 237, 237, 0.218);
+}
