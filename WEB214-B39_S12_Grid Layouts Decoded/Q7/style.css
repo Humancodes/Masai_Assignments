@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* #4ab1d2 */
+
+/* btn #2d3538 */
+
+/* key board #242a2a */
+
+.cont {
+  background-color: #4ab1d2;
+  height: 100vh;
+  display: flex;
+}
+
+.keyboard {
+  background-color: #242a2a;
+  display: grid;
+  width: 75%;
+  margin: auto;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 25px;
+}
+
+.btn {
+  background-color: #2d3538;
+  color: #4ab1d2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.07);
+}
+
+.enter,
+.rshift {
+  grid-column: span 2;
+}
+
+.space {
+  grid-column: span 4;
+}
