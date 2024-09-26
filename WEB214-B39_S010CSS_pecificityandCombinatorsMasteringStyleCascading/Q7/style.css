@@ -1,0 +1,44 @@
+body {
+  background-color: black;
+}
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(to bottom, #ff00cc, #333399);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+.cards > div {
+  width: 250px;
+  height: 300px;
+  cursor: pointer;
+}
+.card1 {
+  background-color: #fcfc9c;
+  border: 2px solid #fcfc9c;
+  box-shadow: 0 0 15px 5px #fcfc9c;
+}
+.card2 {
+  background-color: #fcc5fb;
+  box-shadow: 0 0 15px 5px #fcc5fb;
+}
+.card3 {
+  background-color: #fb4949;
+  box-shadow: 0 0 15px 5px #fb4949;
+}
+.card4 {
+  background-color: #008a00;
+  box-shadow: 0 0 15px 5px #008a00;
+}
+.cards:hover div:not(:hover) {
+  opacity: 0.7;
+}
