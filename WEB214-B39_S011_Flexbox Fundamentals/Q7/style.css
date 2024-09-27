@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 5% auto;
+  gap: 1rem;
+}
+.image {
+  height: 320px;
+  width: 320px;
+}
+.Names {
+  text-align: center;
+  padding-top: 30px;
+}
+.card {
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  overflow: hidden;
+  height: 470px;
+}
+.movie {
+  font-weight: bolder;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.rate {
+  font-weight: bold;
+}
+.book {
+  margin-top: 20px;
+  padding: 5px 15px;
+  background-color: rgb(148, 210, 246);
+  border: none;
+  font-weight: bold;
+}
