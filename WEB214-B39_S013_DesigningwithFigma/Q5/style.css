@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+}
+.head > h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.card {
+  border: 1px solid #e7e6e6;
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+.img-cont {
+  position: relative;
+  overflow: hidden;
+  height: 14rem;
+}
+.image {
+  object-fit: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.8rem;
+}
+.circle {
+  position: absolute;
+  bottom: -20px;
+  right: 15px;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  color: white;
+}
+.card-desc {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.city {
+  margin-left: 1.1rem;
+  font-size: 0.8rem;
+  color: #717171;
+}
+.title {
+  font-weight: 600;
+  font-size: 1.07rem;
+  line-height: 1.6;
+}
+.rating {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.card-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgb(214, 214, 214);
+  padding-top: 0.8rem;
+}
+.card-foot > div {
+  font-size: 0.8rem;
+}
+.price {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 500px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+}
