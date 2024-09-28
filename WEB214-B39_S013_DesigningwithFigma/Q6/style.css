@@ -22,8 +22,9 @@ a {
   align-items: center;
   justify-content: space-around;
   height: 70px;
-  /* width: 90%; */
+  width: 90%;
   font-weight: 500;
+  margin: auto;
 }
 .nav-items {
   display: flex;
@@ -124,7 +125,7 @@ a {
   justify-content: space-between;
   padding: 1rem 1.5rem;
   margin-top: 2rem;
-  width: 80%;
+  width: 70%;
   margin: 5rem auto;
 }
 .head > h1 {
@@ -134,10 +135,10 @@ a {
 
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 0.7fr 1.3fr;
+  grid-template-columns: 1.2fr 1fr 0.8fr 1.2fr;
   grid-template-rows: repeat(2, 1fr);
   gap: 1.5rem;
-  width: 80%;
+  width: 70%;
   height: 400px;
   margin: 1rem auto;
 }
@@ -146,6 +147,8 @@ a {
   display: flex;
   align-items: flex-end;
   border-radius: 15px;
+  object-fit: cover;
+  overflow: hidden;
 }
 .card1 {
   background-image: url("./assets/card1.png");
@@ -179,14 +182,14 @@ a {
   height: 500px;
 }
 .service-head {
-  width: 80%;
+  width: 70%;
   margin: 2rem auto 5rem auto;
   font-size: 1.4rem;
   font-weight: 700;
 }
 
 .service-cards {
-  width: 80%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
   margin: auto;
