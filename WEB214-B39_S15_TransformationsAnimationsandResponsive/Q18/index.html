@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradient Scaling Box</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .cont {
+        background-color: #040404;
+        width: 60%;
+        margin: 100px auto;
+        height: 500px;
+        border-right: 4px solid rgb(255, 255, 26);
+        border-bottom: 4px solid rgb(255, 255, 26);
+
+        box-shadow: -9px 7px 29px 20px rgba(250, 8, 250, 1);
+
+        animation: zoom 1s infinite;
+      }
+
+      @keyframes zoom {
+        0% {
+          transform: scale(1);
+          box-shadow: -8px 9px 30px 16px rgb(171, 12, 137);
+          border-right: 4px solidrgb(255, 255, 26);
+          border-bottom: 4px solid rgb(255, 255, 26);
+        }
+
+        100% {
+          transform: scale(1.5);
+          box-shadow: -8px 9px 30px 16px rgba(250, 8, 250, 0);
+          border-right: none;
+          border-bottom: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont"></div>
+  </body>
+</html>

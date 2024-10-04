@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.cont {
+  padding-right: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5c740;
+  position: relative;
+}
+.circle {
+  padding: 80px;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: circle1 5s ease-in-out infinite;
+}
+.icons {
+  padding: 0.5rem;
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #f5db7e;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+  align-items: center;
+}
+.icon1 {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon2 {
+  top: 15%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+.icon3 {
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+.icon4 {
+  bottom: 15%;
+  left: 85%;
+  transform: translate(-50%, 50%);
+}
+.icon5 {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+.icon6 {
+  bottom: 15%;
+  left: 15%;
+  transform: translate(-50%, 50%);
+}
+.icon7 {
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.icon8 {
+  top: 15%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  animation: text1 3s infinite ease;
+}
+@keyframes text1 {
+  0% {
+    transform: translateX(0);
+    color: white;
+  }
+  100% {
+    transform: translateX(400px) scale(2);
+    color: black;
+  }
+}
+@keyframes circle1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

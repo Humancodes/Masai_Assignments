@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tom and Jerry Animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .cont {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        background: linear-gradient(to bottom, #ff7f16, #ffff39);
+      }
+      .img {
+        position: absolute;
+      }
+      .img1 {
+        animation: moveTom 5s infinite linear;
+        mix-blend-mode: multiply;
+        height: 400px;
+      }
+      .img2 {
+        animation: moveJerry 5s infinite linear;
+        mix-blend-mode: multiply;
+      }
+
+      @keyframes moveTom {
+        0% {
+          left: 50%;
+          filter: blur(5px);
+          transform: translateX(-50%);
+        }
+        25% {
+          left: 75%;
+          filter: blur(0);
+          transform: translateX(-50%);
+        }
+        45% {
+          left: 50%;
+          filter: blur(0);
+          transform: translateX(-50%);
+        }
+        55% {
+          left: 50%;
+          filter: blur(0);
+          transform: translateX(-50%);
+        }
+        70% {
+          left: 25%;
+          filter: blur(0);
+          transform: translateX(-50%);
+        }
+        100% {
+          left: 50%;
+          filter: blur(0);
+          transform: translateX(-50%);
+        }
+      }
+
+      @keyframes moveJerry {
+        0% {
+          right: 50%;
+          filter: blur(5px);
+          transform: translateX(50%);
+        }
+        25% {
+          right: 75%;
+          filter: blur(0);
+          transform: translateX(50%);
+        }
+        45% {
+          right: 50%;
+          filter: blur(0);
+          transform: translateX(50%);
+        }
+        55% {
+          right: 50%;
+          filter: blur(0);
+          transform: translateX(50%);
+        }
+        70% {
+          right: 25%;
+          filter: blur(0);
+          transform: translateX(50%);
+        }
+        100% {
+          right: 50%;
+          filter: blur(5px);
+          transform: translateX(50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="img img1">
+        <img src="https://i.ibb.co/QcGBFWC/tom2.jpg" alt="tom" />
+      </div>
+      <div class="img img2">
+        <img src="https://i.ibb.co/cYprjZs/tom.png" alt="jerry" />
+      </div>
+    </div>
+  </body>
+</html>
